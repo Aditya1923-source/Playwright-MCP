@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const Ajv = require('ajv');
-
+// GitHub Actions Test
 test('GET /products/1 returns the expected product payload', async ({ request }) => {
   const response = await request.get('https://fakestoreapi.com/products/1');
 
